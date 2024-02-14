@@ -1,6 +1,6 @@
 import { DragAndDropData } from './DragAndDropData';
 import { useRef } from 'react';
-import Card from './Card';
+import DragAndDropCard from './DragAndDropCard';
 
 const DragAndDrop = () => {
   const dragElRef = useRef<HTMLDivElement | null>(null);
@@ -59,7 +59,7 @@ const DragAndDrop = () => {
       </h1>
       <div className="grid grid-cols-2 gap-4">
         {DragAndDropData.map((data) => (
-          <Card
+          <DragAndDropCard
             key={data.name}
             data={data}
             onDragStart={handleDragStart}

@@ -1,4 +1,4 @@
-import DragAndDrop from './DragAndDrop/DragAndDrop';
+import DragAndDrop from './Examples/DragAndDrop/DragAndDrop';
 
 function App() {
   return (

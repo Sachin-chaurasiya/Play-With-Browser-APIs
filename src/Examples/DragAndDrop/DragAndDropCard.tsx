@@ -1,8 +1,8 @@
 import { FC, HTMLAttributes } from 'react';
-import RepositoryIcon from '../assets/repository.svg';
-import DragIcon from '../assets/drag.svg';
+import RepositoryIcon from '../../assets/repository.svg';
+import DragIcon from '../../assets/drag.svg';
 
-interface CardProps extends HTMLAttributes<HTMLDivElement> {
+interface DragAndDropCardProps extends HTMLAttributes<HTMLDivElement> {
   data: {
     name: string;
     url: string;
@@ -10,7 +10,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
   };
 }
 
-const Card: FC<CardProps> = ({
+const DragAndDropCard: FC<DragAndDropCardProps> = ({
   data,
   onDragStart,
   onDragLeave,
@@ -57,4 +57,4 @@ const Card: FC<CardProps> = ({
   );
 };
 
-export default Card;
+export default DragAndDropCard;
